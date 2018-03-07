@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#006064"
+    tools:context="com.example.android.sqlitedemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:textColor="#ffffff"
+        android:text="DatabaseDemo"
+        android:background="#000000"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/db"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:drawableLeft="@drawable/user"
+        android:padding="4dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ECEFF1"
+        android:background="@drawable/custom"
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:textColorHint="#ECEFF1"
+        android:id="@+id/etemail"
+        android:padding="4dp"
+        android:background="@drawable/custom"
+        android:drawableLeft="@drawable/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textWebEmailAddress"
+        android:layout_margin="10dp"
+        android:hint="Somename@emailservice.com" />
+
+    <EditText
+        android:id="@+id/etcity"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/city"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom"
+        android:textColorHint="#ECEFF1"
+        android:hint="Enter City" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:onClick="onAdd"
+        android:text="Add To Database" />
+
+    <Button
+        android:textStyle="bold"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/show"
+        android:onClick="onShow"
+        android:text="Show List" />
+</LinearLayout>
